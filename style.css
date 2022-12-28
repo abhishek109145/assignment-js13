@@ -1,0 +1,56 @@
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+
+  pre{
+    font-size: 15px;
+  }
+
+
+  .s1 {
+    background-color: blanchedalmond;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+
+  table,
+  tr,
+  th,
+  td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    color: blueviolet;
+  }
+
+  th {
+    width: 50%;
+    color: blueviolet;
+  }
+
+  #change{
+    text-align: center;
+    color: darkblue;
+  }
+
+  #abc{
+    text-align: center;
+  }
+
+  #clock{
+    text-align: center;
+    color: gray;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  #opt{
+    text-align: center;
+  }
+b{
+  font-size: 18px;
+}

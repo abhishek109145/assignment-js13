@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Javascript(DOM)</title>
+  </head>
+
+  <body>
+    <h1>Javascript Assignment( DOM )</h1>
+  <pre>
+
+    <b>Ques: Write the code to access element which is having id as "text".</b>
+    
+ Ans: const elem = document.getElementById('text');
+    
+
+    <b>Ques: Write the code to access element which is having tag as "h1".</b>
+    
+ Ans: const elem = document.getElementsByTagName('h1');
+    
+
+    <b>Ques: Write the code to access element which is having class as "box".</b>
+   
+ Ans: const elem = document.getElementsByClassName('box')
+
+    <b>Ques: "< h1> Hello < / h1> Change the heading from ""Hello"" to ""Hello
+      World"" using DOM functions"</b>
+    
+ Ans: let elem = document.getElementsByTagName("h1")[0];
+      elem.innerText = "Hello World";
+
+    <b>Ques: Create three cards on HTML page and arrange them using flex property
+      in row or horizontal direction and also create button at the bottom named
+      "Change Flex direction". When user clicks on this button, the cards
+      arrangement should be changed to vertical direction.</b>
+    
+  Ans:      <div class="box">
+            <div class="s1"> 1.</div>
+            <div class="s1"> 2.</div>
+            <div class="s1"> 3.</div>
+        </div>
+        <button onclick="rw()">Change Flex Direction</button>
+    
+
+    <b>Ques: What's the difference between window vs document?</b>
+    
+  Ans: <table>
+     <tr>
+        <th >window</th>
+        <th >document</th>
+      </tr>
+      <tr>
+        <td>
+          <li>
+            The window is the first thing that gets loaded into the browser.
+          </li>
+        </td>
+        <td>
+          <li>
+            The document object is your html document that will be loaded into
+            the browser.
+          </li>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <li>window is the root of everything.</li>
+        </td>
+        <td>
+          <li>
+            It represents any HTML document or web page that is loaded in the
+            browser.
+          </li>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <li>It is the object of the browser.</li>
+        </td>
+        <td>
+          <li>It is the object of window property.</li>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <li>
+            Global objects, functions, and variables of JavaScript are members
+            of the window object.
+          </li>
+        </td>
+        <td>
+          <li>
+            All the tags, elements with attributes in HTML are part of the
+            document.
+          </li>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <li>
+            We can access the window from the window only. i.e. window.window.
+          </li>
+        </td>
+        <td>
+          <li>
+            We can access the document from a window using the window.document.
+          </li>
+        </td>
+      </tr>
+    </table>
+
+    <b>Ques: Add one style attribute and give text color as red and id attribute
+      and give the id value as ""heading"" in the above given h1 tag using DOM
+      functions"</b>
+    
+  Ans:          let myfun = setTimeout(chan, 1000);
+           
+            function chan() {
+                let heading2 = document.getElementById("abc");
+                heading2.style.color = "red";
+                heading2.id = "heading";
+            }   
+    
+    <h1 id="abc">Hello World</h1>
+   
+    <b>Ques:  Create an HTML page having content as Hello world and a button named
+      Replace Text. When user will click on this button page content should be
+      changed to "Welcome to Elevation academy"</b>
+
+  Ans:  <h1 id="change">Hello World</h1>
+    <button  onclick="set()">Change Text</button>
+    
+    
+        function set()
+        {
+            let change = document.getElementById("change");
+            change.innerText = "Welcome to Elevation academy";
+        }
+    
+
+    <b>Ques: Write code to implement timer clock using JS -- display HH:MM:SS --
+      the time should keep updating every second.</b>
+
+  Ans:  <div id="clock" onload="currentTime()"></div>
+
+    <b>Ques: Create a select drop down for selecting Year 20-21, 21-22 etc. Print
+      the item text selected.</b>
+    
+  Ans:
+    <select id="list">
+      <option value="Year:20-21">20-21</option>
+      <option value="Year:21-22">21-22</option>
+      <option value="Year:22-23">22-23</option>
+      <option value="Year:23-24">23-24</option>
+      <option value="Year:24-25">24-25</option>
+    </select>
+    <button type="button" onclick="myFun()">
+      click here to display selected value
+    </button>
+    <h2 id="opt"></h2>
+    
+    <script src="index.js"></script>
+  </pre>  
+  </body>
+</html>
